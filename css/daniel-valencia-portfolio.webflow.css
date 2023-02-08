@@ -1262,10 +1262,7 @@ figcaption {
 
 .slide {
   overflow: visible;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: none;
 }
 
 .slide.p1 {
@@ -1282,10 +1279,6 @@ figcaption {
 
 .slide.p3 {
   background-image: url('../images/project3-1.png');
-}
-
-.slide.p4 {
-  background-image: url('../images/project4-1.png');
 }
 
 .slide-2 {
@@ -1924,10 +1917,6 @@ figcaption {
   filter: invert(100%);
 }
 
-.clickable-blocks-container {
-  padding-top: 20px;
-}
-
 .div-block {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -2167,10 +2156,6 @@ figcaption {
   .modal-content {
     -ms-grid-rows: auto;
     grid-template-rows: auto;
-  }
-
-  .slide.p4 {
-    background-image: url('../images/project4-1.png');
   }
 
   .slide-2 {
@@ -2815,21 +2800,6 @@ figcaption {
     width: 40px;
   }
 
-  .div-block-2 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
   .project-form-2 {
     width: 520px;
   }
@@ -3268,10 +3238,6 @@ figcaption {
 
   .clickable-block-link-red {
     text-decoration: none;
-  }
-
-  .clickable-blocks-container {
-    padding-top: 10px;
   }
 
   .div-block {
