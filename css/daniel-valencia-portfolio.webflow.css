@@ -426,8 +426,8 @@ figcaption {
     ". . .";
   -ms-grid-columns: 1.5fr 30px 1.5fr 30px 1.5fr;
   grid-template-columns: 1.5fr 1.5fr 1.5fr;
-  -ms-grid-rows: auto 30px auto;
-  grid-template-rows: auto auto;
+  -ms-grid-rows: auto 30px auto 30px auto 30px auto;
+  grid-template-rows: auto auto auto auto;
 }
 
 .work-image {
@@ -491,6 +491,20 @@ figcaption {
 
 .work-image.cc-work-4 {
   background-image: url('../images/project4-1.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.work-image.cc-work-5 {
+  background-image: url('../images/project5.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.work-image.cc-work-unknown {
+  background-image: url('../images/Coming-soon.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1279,14 +1293,19 @@ figcaption {
 
 .slide.p3 {
   background-image: url('../images/project3-1.png');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.slide.p5 {
+  background-image: url('../images/project5.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: repeat-y;
 }
 
 .slide-2 {
   overflow: visible;
-  background-image: url('../images/project2-2.png');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .slide-2.p1_2 {
@@ -1838,10 +1857,10 @@ figcaption {
 }
 
 .clickable-block-text {
+  padding-right: 10px;
   font-family: 'Roboto Mono Bold', sans-serif;
   color: #fafafa;
   font-size: 20px;
-  text-decoration: none;
 }
 
 .clickable-block-icon {
@@ -2086,7 +2105,7 @@ figcaption {
   color: #1a1b1f;
 }
 
-.modal-content-4 {
+.modal-content-5 {
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -2138,6 +2157,37 @@ figcaption {
   background-repeat: no-repeat;
 }
 
+.project-5-modal-popup {
+  position: fixed;
+  z-index: 7;
+  display: none;
+  overflow: visible;
+  width: 100vw;
+  height: 100vh;
+  color: #1a1b1f;
+}
+
+.slider-5 {
+  position: relative;
+  display: block;
+  overflow: visible;
+  width: 280px;
+  height: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 1440px) {
   .work-image.cc-work-2 {
     background-image: url('../images/project2-2.png');
@@ -2160,6 +2210,12 @@ figcaption {
 
   .slide-2 {
     background-image: url('../images/project2-2.png');
+  }
+
+  .slide-2.p3_2 {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .slide-2.p4_2 {
@@ -2197,7 +2253,7 @@ figcaption {
   }
 
   .project-3-modal-popup {
-    display: none;
+    display: block;
   }
 
   .modal-content-3 {
@@ -2206,10 +2262,10 @@ figcaption {
   }
 
   .project-4-modal-popup {
-    display: block;
+    display: none;
   }
 
-  .modal-content-4 {
+  .modal-content-5 {
     -ms-grid-rows: auto;
     grid-template-rows: auto;
   }
@@ -2225,6 +2281,10 @@ figcaption {
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .project-5-modal-popup {
+    display: block;
   }
 }
 
@@ -2509,7 +2569,7 @@ figcaption {
     height: 400px;
   }
 
-  .modal-content-4 {
+  .modal-content-5 {
     display: -ms-grid;
     display: grid;
     -webkit-box-orient: horizontal;
@@ -2844,7 +2904,7 @@ figcaption {
     height: 500px;
   }
 
-  .modal-content-4 {
+  .modal-content-5 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3240,10 +3300,6 @@ figcaption {
     text-decoration: none;
   }
 
-  .div-block {
-    padding-top: 10px;
-  }
-
   .project-form-2 {
     width: 320px;
     height: 800px;
@@ -3284,7 +3340,7 @@ figcaption {
     height: 420px;
   }
 
-  .modal-content-4 {
+  .modal-content-5 {
     display: block;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -3297,6 +3353,12 @@ figcaption {
   }
 
   .slider-4 {
+    display: block;
+    width: 280px;
+    height: 540px;
+  }
+
+  .slider-5 {
     display: block;
     width: 280px;
     height: 540px;
@@ -3407,6 +3469,32 @@ figcaption {
   grid-column-end: span 1;
 }
 
+#w-node-_56e9712d-81aa-1f3a-6504-1eb82e8471c3-db35e3e7 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-grid-row-align: start;
+  align-self: start;
+}
+
+#w-node-_56e9712d-81aa-1f3a-6504-1eb82e8471d2-db35e3e7 {
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+}
+
 #w-node-dff26f68-5731-3efa-d3dd-8f65c72d8fa5-db35e3e7 {
   -ms-grid-column: 1;
   grid-column-start: 1;
@@ -3449,6 +3537,83 @@ figcaption {
   grid-row-start: 2;
   -ms-grid-row-span: 1;
   grid-row-end: 3;
+}
+
+#w-node-_130f56e2-c2f9-7548-5393-5ed3b5b96d33-db35e3e7 {
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 2;
+  grid-row-start: 2;
+  -ms-grid-row-span: 1;
+  grid-row-end: 3;
+}
+
+#w-node-_96af52c1-da2a-e7ec-4638-f50cad0577d5-db35e3e7 {
+  -ms-grid-column: 3;
+  grid-column-start: 3;
+  -ms-grid-column-span: 1;
+  grid-column-end: 4;
+  -ms-grid-row: 2;
+  grid-row-start: 2;
+  -ms-grid-row-span: 1;
+  grid-row-end: 3;
+}
+
+#w-node-b9b8cffa-98ea-95bf-36f4-f5908b39a3ee-db35e3e7 {
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 3;
+  grid-row-start: 3;
+  -ms-grid-row-span: 1;
+  grid-row-end: 4;
+}
+
+#w-node-_855d005f-b24c-df06-59ff-38997a21efc2-db35e3e7 {
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 3;
+  grid-row-start: 3;
+  -ms-grid-row-span: 1;
+  grid-row-end: 4;
+}
+
+#w-node-e9b66cef-d998-9587-9ab0-8df6134668c0-db35e3e7 {
+  -ms-grid-column: 3;
+  grid-column-start: 3;
+  -ms-grid-column-span: 1;
+  grid-column-end: 4;
+  -ms-grid-row: 3;
+  grid-row-start: 3;
+  -ms-grid-row-span: 1;
+  grid-row-end: 4;
+}
+
+#w-node-_56e7595e-4174-72b8-3f85-fd0eb1cdafce-db35e3e7 {
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 4;
+  grid-row-start: 4;
+  -ms-grid-row-span: 1;
+  grid-row-end: 5;
+}
+
+#w-node-_79f9c3ba-3075-d5ad-2c25-f06709409841-db35e3e7 {
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 4;
+  grid-row-start: 4;
+  -ms-grid-row-span: 1;
+  grid-row-end: 5;
 }
 
 #name.w-node-_068047ba-8ea8-2a45-b89f-fa9d6a367bb5-db35e3e7 {
@@ -3517,6 +3682,15 @@ figcaption {
   }
 
   #w-node-_15a8ea4b-42e8-116a-73f4-5a60937f0d2b-db35e3e7 {
+    -ms-grid-column-align: center;
+    justify-self: center;
+    -webkit-align-self: start;
+    -ms-flex-item-align: start;
+    -ms-grid-row-align: start;
+    align-self: start;
+  }
+
+  #w-node-_56e9712d-81aa-1f3a-6504-1eb82e8471d2-db35e3e7 {
     -ms-grid-column-align: center;
     justify-self: center;
     -webkit-align-self: start;
