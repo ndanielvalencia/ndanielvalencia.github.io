@@ -1271,7 +1271,7 @@ figcaption {
   position: relative;
   display: -ms-grid;
   display: grid;
-  overflow: scroll;
+  overflow: visible;
   height: 800px;
   margin: 10px auto auto;
   -webkit-box-pack: start;
@@ -2053,7 +2053,7 @@ figcaption {
   position: relative;
   display: -ms-grid;
   display: grid;
-  overflow: scroll;
+  overflow: visible;
   height: 800px;
   margin: 10px auto auto;
   -webkit-box-pack: start;
@@ -2112,7 +2112,7 @@ figcaption {
   position: relative;
   display: -ms-grid;
   display: grid;
-  overflow: scroll;
+  overflow: visible;
   height: 800px;
   margin: 10px auto auto;
   -webkit-box-pack: start;
@@ -2173,7 +2173,7 @@ figcaption {
   position: relative;
   display: -ms-grid;
   display: grid;
-  overflow: scroll;
+  overflow: visible;
   height: 800px;
   margin: 10px auto auto;
   -webkit-box-pack: start;
@@ -2292,7 +2292,7 @@ figcaption {
 .project-7-modal-popup {
   position: fixed;
   z-index: 7;
-  display: none;
+  display: block;
   overflow: visible;
   width: 100vw;
   height: 100vh;
@@ -2324,7 +2324,7 @@ figcaption {
   position: relative;
   display: -ms-grid;
   display: grid;
-  overflow: scroll;
+  overflow: visible;
   height: 800px;
   margin: 10px auto auto;
   -webkit-box-pack: start;
@@ -2348,7 +2348,7 @@ figcaption {
   position: relative;
   display: -ms-grid;
   display: grid;
-  overflow: scroll;
+  overflow: visible;
   height: 800px;
   margin: 10px auto auto;
   -webkit-box-pack: start;
@@ -2372,7 +2372,7 @@ figcaption {
   position: relative;
   display: -ms-grid;
   display: grid;
-  overflow: scroll;
+  overflow: visible;
   height: 800px;
   margin: 10px auto auto;
   -webkit-box-pack: start;
@@ -2690,6 +2690,7 @@ figcaption {
   .modal-content {
     display: -ms-grid;
     display: grid;
+    overflow: scroll;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -2769,6 +2770,7 @@ figcaption {
 
   .modal-content-2 {
     display: block;
+    overflow: scroll;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -2786,6 +2788,7 @@ figcaption {
   .modal-content-3 {
     display: -ms-grid;
     display: grid;
+    overflow: scroll;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -2807,6 +2810,7 @@ figcaption {
   .modal-content-5 {
     display: -ms-grid;
     display: grid;
+    overflow: scroll;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -2828,6 +2832,7 @@ figcaption {
   .modal-content-4 {
     display: -ms-grid;
     display: grid;
+    overflow: scroll;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -2845,6 +2850,7 @@ figcaption {
   .modal-content-6 {
     display: -ms-grid;
     display: grid;
+    overflow: scroll;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -2862,6 +2868,7 @@ figcaption {
   .modal-content-7 {
     display: -ms-grid;
     display: grid;
+    overflow: scroll;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
