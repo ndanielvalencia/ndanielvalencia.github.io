@@ -1882,7 +1882,6 @@ figcaption {
   flex-direction: column;
   margin: auto;
   padding: 20px;
-  display: block;
   position: absolute;
   top: 0%;
   bottom: 0%;
@@ -1932,6 +1931,22 @@ figcaption {
   display: block;
   position: relative;
   overflow: visible;
+}
+
+.project-form-10 {
+  width: 920px;
+  height: 780px;
+  background-color: #fff;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, .25);
 }
 
 @media screen and (min-width: 1440px) {
@@ -2040,6 +2055,10 @@ figcaption {
   .project-form-4, .project-form-7, .project-form-8 {
     height: 860px;
   }
+
+  .project-form-10 {
+    height: 760px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -2051,12 +2070,44 @@ figcaption {
     display: block;
   }
 
-  .project-7-modal-popup, .project-8-modal-popup {
-    display: none;
+  .slider-9 {
+    height: 500px;
   }
 
-  .slider-9, .slider-10, .slider-11 {
+  .project-form-5 {
+    height: 750px;
+  }
+
+  .project-form6 {
+    height: 820px;
+  }
+
+  .project-form-6 {
+    height: 980px;
+  }
+
+  .slider-10 {
     height: 500px;
+  }
+
+  .project-form-4 {
+    height: 820px;
+  }
+
+  .project-form-8 {
+    height: 880px;
+  }
+
+  .project-form-9 {
+    height: 1120px;
+  }
+
+  .slider-11 {
+    height: 500px;
+  }
+
+  .project-form-10 {
+    height: 820px;
   }
 }
 
@@ -2339,6 +2390,10 @@ figcaption {
   .slider-11 {
     width: 300px;
   }
+
+  .project-form-10 {
+    width: 680px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2618,6 +2673,10 @@ figcaption {
 
   .slider-11 {
     width: 300px;
+  }
+
+  .project-form-10 {
+    width: 520px;
   }
 }
 
@@ -2985,6 +3044,13 @@ figcaption {
   .slider-11 {
     width: 280px;
     display: block;
+  }
+
+  .project-form-10 {
+    width: 320px;
+    height: 800px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
