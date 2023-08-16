@@ -2308,7 +2308,7 @@ figcaption {
   width: 100vw;
   height: 100vh;
   color: #1a1b1f;
-  display: none;
+  display: block;
   position: fixed;
   overflow: visible;
 }
